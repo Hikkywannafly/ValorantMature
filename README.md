@@ -1,6 +1,9 @@
 <p align="center">
   <a href="https://discord.gg/DXX4x5TQRq">
-    <img src="https://img.shields.io/badge/Discord-Join%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+    <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&logo=discord&logoColor=white&label=Discord&query=%24.approximate_member_count&suffix=%20members&url=https%3A%2F%2Fdiscord.com%2Fapi%2Fv10%2Finvites%2FDXX4x5TQRq%3Fwith_counts%3Dtrue&color=5865F2" alt="Discord members" />
+  </a>
+  <a href="https://discord.gg/DXX4x5TQRq">
+    <img src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&logo=discord&logoColor=white&label=Online&query=%24.approximate_presence_count&suffix=%20online&url=https%3A%2F%2Fdiscord.com%2Fapi%2Fv10%2Finvites%2FDXX4x5TQRq%3Fwith_counts%3Dtrue&color=22C55E" alt="Discord online" />
   </a>
   <img src="https://img.shields.io/badge/.NET-9.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET 9" />
   <img src="https://img.shields.io/badge/WPF-Windows%20Desktop-0078D4?style=for-the-badge" alt="WPF" />
