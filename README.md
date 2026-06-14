@@ -1,8 +1,4 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&height=120&color=0:111827,100:0f766e&text=ValorantMature&fontColor=ffffff&fontSize=38&desc=Public%20source%20for%20the%20local%20VNG%20logo%20workflow&descAlignY=74" alt="ValorantMature" />
-</p>
-
-<p align="center">
   <a href="https://discord.gg/DXX4x5TQRq">
     <img src="https://img.shields.io/badge/Discord-Join%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
   </a>
