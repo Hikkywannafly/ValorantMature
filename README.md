@@ -1,32 +1,58 @@
-# ValorantMature
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&height=120&color=0:111827,100:0f766e&text=ValorantMature&fontColor=ffffff&fontSize=38&desc=Public%20source%20for%20the%20local%20VNG%20logo%20workflow&descAlignY=74" alt="ValorantMature" />
+</p>
 
-Public source build of the ValorantMature desktop app.
+<p align="center">
+  <a href="https://discord.gg/DXX4x5TQRq">
+    <img src="https://img.shields.io/badge/Discord-Join%20server-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" />
+  </a>
+  <img src="https://img.shields.io/badge/.NET-9.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET 9" />
+  <img src="https://img.shields.io/badge/WPF-Windows%20Desktop-0078D4?style=for-the-badge" alt="WPF" />
+  <img src="https://img.shields.io/badge/Source-Public%20Audit-16A34A?style=for-the-badge" alt="Public Audit" />
+</p>
 
-This repository is intentionally limited. It is published so users can inspect the local Windows application flow that detects the VALORANT `Paks` folder, backs up VNG logo package files, removes them while the game is running, and restores the original files after the game closes.
+## Overview
 
-## Included
+ValorantMature is a Windows desktop tool. This public repository contains the auditable local workflow only: detecting the VALORANT `Paks` folder, backing up VNG logo package files, removing those logo files while the game is running, and restoring the originals when the game closes.
 
-- WPF desktop UI using WPF-UI.
-- Single-instance app startup and tray behavior.
-- VALORANT `Paks` folder detection.
-- Local backup, removal, and restore logic for VNG logo package files.
-- Game process monitor.
-- Public guidance, risk, and contact pages.
+The public source is intentionally limited. Private premium modules, backend code, license checks, cloud sync, red blood, corpse toggles, crosshair cloud editing, proprietary data files, and release binaries are not included.
 
-## Not Included
+## Documentation
 
-The private/premium code is deliberately not part of this source tree:
+English:
 
-- License/key activation and verification.
-- Private backend client code, API keys, serverless functions, and backend logic.
-- Private cloud preference sync.
-- Red blood / corpse toggles.
-- Crosshair color/profile cloud editing.
-- Proprietary game data files and release binaries.
+- [Guide](docs/en/guide.md)
+- [Mechanism](docs/en/mechanism.md)
+- [Risks](docs/en/risks.md)
 
-This separation is intentional: the public repo can be audited for the local file operations, while sensitive server-side and premium logic stays private.
+Tiếng Việt:
 
-## Build
+- [Hướng dẫn](docs/vi/huong-dan.md)
+- [Cơ chế](docs/vi/co-che.md)
+- [Rủi ro](docs/vi/rui-ro.md)
+
+## What Is Included
+
+| Area | Included in public source |
+| --- | --- |
+| Desktop UI | WPF + WPF-UI shell, pages, tray behavior |
+| Game folder detection | Local detection for VALORANT `Paks` path |
+| File workflow | Backup, remove, restore VNG logo package files |
+| Monitor | Process watcher for game open/close state |
+| Docs | Build guide, mechanism notes, risk notes |
+
+## What Is Not Included
+
+| Area | Status |
+| --- | --- |
+| License/key system | Private |
+| Backend/API keys | Private |
+| Cloud preference sync | Private |
+| Red blood/corpse features | Private |
+| Crosshair cloud editing | Private |
+| Proprietary game data/release binaries | Not published |
+
+## Build From Source
 
 Requirements:
 
@@ -44,6 +70,12 @@ Publish a local self-contained build:
 dotnet publish .\src-wpf\ValorantUnlocker.Wpf.csproj -c Release -o .\publish
 ```
 
-## Notes
+## Support
 
-This project is not affiliated with Riot Games, VALORANT, or VNG. Use at your own risk.
+Join the Discord server for announcements, support, and release information:
+
+https://discord.gg/DXX4x5TQRq
+
+## Disclaimer
+
+This project is not affiliated with Riot Games, VALORANT, or VNG. The tool modifies local game package files while it is running. Use it at your own risk.
