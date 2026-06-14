@@ -1,0 +1,64 @@
+<Page
+    x:Class="ValorantUnlocker.Views.Pages.ContactPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+    Title="Liên hệ &amp; Hỗ trợ">
+
+    <Grid Margin="28,20,28,24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ui:TextBlock FontTypography="Title" Text="Liên hệ" />
+
+        <ui:Card Grid.Row="1" Margin="0,14,0,0" Padding="16,14">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Row="0" Grid.Column="0" VerticalAlignment="Center">
+                    <ui:TextBlock
+                        FontTypography="BodyStrong"
+                        Foreground="{DynamicResource AccentTextFillColorPrimaryBrush}"
+                        Text="VALORANT Mature Unlocker" />
+                    <ui:TextBlock
+                        Margin="0,4,0,0"
+                        Foreground="{DynamicResource TextFillColorSecondaryBrush}"
+                        Text="v2.0 WPF Fluent" />
+                </StackPanel>
+
+                <ui:Button
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Padding="14,10"
+                    Appearance="Primary"
+                    Click="BtnDiscord_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Border
+                            Width="26"
+                            Height="26"
+                            CornerRadius="8">
+                            <Border.Background>
+                                <ImageBrush ImageSource="pack://application:,,,/Assets/discord-logo.png" Stretch="Uniform" />
+                            </Border.Background>
+                        </Border>
+                        <ui:TextBlock
+                            Margin="12,0,0,0"
+                            VerticalAlignment="Center"
+                            FontTypography="BodyStrong"
+                            Text="Discord" />
+                    </StackPanel>
+                </ui:Button>
+            </Grid>
+        </ui:Card>
+    </Grid>
+</Page>

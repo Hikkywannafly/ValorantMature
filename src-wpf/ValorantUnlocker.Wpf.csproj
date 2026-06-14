@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <!-- UseWindowsForms: cho NotifyIcon (tray) + FolderBrowserDialog -->
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>ValorantMature</AssemblyName>
+    <RootNamespace>ValorantUnlocker</RootNamespace>
+    <ApplicationIcon>..\icon\icon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <!-- Xuất bản Release: self-contained single-file, chạy mọi máy Windows x64 không cần cài .NET -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WPF-UI" Version="4.3.0" />
+  </ItemGroup>
+
+  <!-- Ảnh giao diện public (nhúng vào exe — an toàn cho single-file). -->
+  <ItemGroup>
+    <Resource Include="..\icon\maucam.png" Link="Assets\maucam.png" />
+    <Resource Include="..\icon\discord-logo.png" Link="Assets\discord-logo.png" />
+  </ItemGroup>
+
+  <!-- Lõi engine (tách rời UI) nằm ở Core\ — tự động được đưa vào build theo glob mặc định. -->
+
+</Project>
