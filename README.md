@@ -9,7 +9,7 @@
   <img src="https://img.shields.io/badge/WPF-Windows%20Desktop-0078D4?style=for-the-badge" alt="WPF" />
   <img src="https://img.shields.io/badge/Source-Public%20Audit-16A34A?style=for-the-badge" alt="Public Audit" />
   
-  ![GitHub all releases](https://img.shields.io/github/downloads/Hikkywannafly/ValorantMature/total.svg)
+![GitHub all releases](https://img.shields.io/github/downloads/Hikkywannafly/steam-workshop-download/total.svg)
   
 </p>
 
